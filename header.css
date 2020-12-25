@@ -56,6 +56,8 @@ header .search .submit {
 header .account {
   width: 25%;
   margin-left: 10px;
+  top: 50%;
+  -ms-transform: translateY(-50%);
 }
 .btn {
   display: inline-flex;
@@ -79,26 +81,28 @@ header .account .btn-signup {
   line-height: 1rem;
 }
 header .account .btn-account {
-  padding: none;
-  background: none;
-  border: none;
-  box-shadow: none;
+  position: absolute;
 }
 header .account > a {
   margin-left: 10px;
   margin-right: 10px;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 739px) {
   header .logo .logo-typo {
     display: none;
   }
 }
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 979px) {
   header .account .btn-login {
     display: none;
   }
   header .account .btn-signup {
     display: none;
+  }
+  header .account .btn-account {
+    position: relative;
+    float: right;
+    margin-right: 20px;
   }
 }
