@@ -1,0 +1,104 @@
+header {
+  background: #e8d4cc;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  overflow: scroll;
+}
+header .logo {
+  padding-left: 10px;
+  width: 25%;
+}
+header .logo .logo-img {
+  width: 36px;
+  height: 36px;
+  margin-right: 5px;
+  margin-top: 3px;
+  align-items: center;
+}
+header .logo .logo-typo {
+  margin: auto;
+  height: 1.5rem;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+header .search {
+  width: 50%;
+  float: left;
+}
+header .search-wrapper {
+  width: 80%;
+  margin: auto;
+  position: relative;
+  float: left;
+}
+header .search input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  padding: 10px 20px;
+  padding-left: 40px;
+  border-radius: 5px;
+}
+header .search .submit {
+  background: none;
+  border: none;
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  height: 35px;
+}
+
+header .account {
+  width: 25%;
+  margin-left: 10px;
+}
+.btn {
+  display: inline-flex;
+  padding: 10px 20px;
+  border-radius: 44px;
+  background: #fa6900;
+  font-size: 14px;
+  text-decoration: none;
+  color: #ffffff;
+  box-shadow: 0px 3px 8px #707070;
+}
+header .account .btn-login {
+  font-size: 20px;
+  line-height: 1rem;
+  background: #ffffff;
+  color: #fa6900;
+  border: 1px solid #fa6900;
+}
+header .account .btn-signup {
+  font-size: 20px;
+  line-height: 1rem;
+}
+header .account .btn-account {
+  padding: none;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+header .account > a {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 720px) {
+  header .logo .logo-typo {
+    display: none;
+  }
+}
+@media screen and (max-width: 970px) {
+  header .account .btn-login {
+    display: none;
+  }
+  header .account .btn-signup {
+    display: none;
+  }
+}
