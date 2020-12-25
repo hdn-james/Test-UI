@@ -1,21 +1,21 @@
 header {
+  font-family: Helvetica;
   background: #e8d4cc;
   display: flex;
-  height: 60px;
+  height: 80px;
   align-items: center;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
-  overflow: scroll;
 }
 header .logo {
-  padding-left: 10px;
+  padding-left: 15px;
   width: 25%;
 }
 header .logo .logo-img {
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   margin-right: 5px;
   margin-top: 3px;
   align-items: center;
@@ -29,6 +29,8 @@ header .logo .logo-typo {
 header .search {
   width: 50%;
   float: left;
+  margin: auto;
+  height: 40px;
 }
 header .search-wrapper {
   width: 80%;
@@ -57,10 +59,9 @@ header .account {
   width: 25%;
   margin-left: 10px;
   top: 50%;
-  -ms-transform: translateY(-50%);
 }
 .btn {
-  display: inline-flex;
+  display: inline-block;
   padding: 10px 20px;
   border-radius: 44px;
   background: #fa6900;
@@ -68,41 +69,51 @@ header .account {
   text-decoration: none;
   color: #ffffff;
   box-shadow: 0px 3px 8px #707070;
+  width: 75px;
+  text-align: center;
+  position: relative;
+  float: right;
+  margin-right: 90px;
+}
+header .account .btn-signup {
+  font-size: 20px;
+  font-weight: regular;
+  line-height: 1rem;
 }
 header .account .btn-login {
   font-size: 20px;
   line-height: 1rem;
+  font-weight: regular;
   background: #ffffff;
   color: #fa6900;
   border: 1px solid #fa6900;
 }
-header .account .btn-signup {
-  font-size: 20px;
-  line-height: 1rem;
-}
+
 header .account .btn-account {
-  position: absolute;
+  position: relative;
+  margin-top: 8px;
+  float: right;
+  margin-right: 30px;
 }
+
 header .account > a {
   margin-left: 10px;
   margin-right: 10px;
 }
 
-@media screen and (max-width: 739px) {
+@media screen and (max-width: 760px) {
   header .logo .logo-typo {
     display: none;
   }
 }
-@media screen and (max-width: 979px) {
+@media screen and (max-width: 1390px) {
   header .account .btn-login {
     display: none;
   }
   header .account .btn-signup {
     display: none;
   }
-  header .account .btn-account {
-    position: relative;
-    float: right;
-    margin-right: 20px;
+  header .account {
+    width: 15%;
   }
 }
